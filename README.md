@@ -1,6 +1,6 @@
 ## Angular Todo
 
-![ang-todo](https://github.com/demesvardestin/rack-simple/raw/master/public/images/ang-todo.png "ang-todo")
+![angular-todo](https://github.com/demesvardestin/angular-todo/raw/master/public/images/ang-todo.png "angular-todo")
 
 ## About
 
