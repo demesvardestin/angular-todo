@@ -1,0 +1,128 @@
+body, html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #fff;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+nav {
+    height: 75px;
+    background-color: #fff;
+    border-bottom: none;
+    box-shadow: 0 0 1rem 5px rgba(0, 0, 255, 0.1);
+}
+
+.navbar-brand {
+    border: 3px solid #2a00ff;
+    border-radius: 20px;
+    color: #2a00ff;
+    font-family: 'Major Mono Display', monospace;
+    padding: 5px 20px;
+}
+
+#mainContent {
+    margin: auto;
+    padding: 50px;
+}
+
+.card {
+    border-radius: 1rem !important;
+    border: 0.5px solid #e7e7e9;
+    box-shadow: 0 0 1rem 5px rgba(0, 0, 255, 0.1);
+}
+
+.card-header {
+    font-weight: 700;
+    color: #fff;
+    background: #2a00ff;
+    border-top-right-radius: 1rem !important;
+    border-top-left-radius: 1rem !important;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.no-display {
+    display: none;
+}
+
+#task-card-body {
+    min-height: 300px;
+    padding: 0;
+}
+
+#tasks {
+    min-height: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#empty-list {
+    width: 100%;
+    min-height: inherit;
+    text-align: center;
+    color: #c4c4c4;
+    padding: 1.25rem;
+}
+
+#empty-list > p {
+    margin: auto !important;
+}
+
+#task-input {
+    border: none;
+    border-top: 0.5px solid #e7e7e9;
+    padding: 1.25rem;
+    width: 100%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+#task-input:focus {
+    outline: none;
+}
+
+.task-row {
+    padding: 12px 1.25rem;
+    border-bottom: 1px solid #fff;
+    color: #000;
+    background-color: #e7e7e9;
+}
+
+#task-preview {
+    background-color: #fff !important;
+}
+
+#input-form {
+    border-top: 0.5px solid #e7e7e9;
+}
+
+.btn {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    color: #fff !important;
+    border-radius: 1rem;
+}
+
+.no-display {
+    display: none;
+}
+
+#spinner-container {
+    text-align: center;
+    margin-top: 140px;
+}
