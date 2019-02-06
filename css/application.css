@@ -3,7 +3,7 @@ body, html {
 }
 
 body {
-    background-color: #fff;
+    background-color: #e7e7e9;
 }
 
 footer {
@@ -86,7 +86,7 @@ nav {
 #task-input {
     border: none;
     border-top: 0.5px solid #e7e7e9;
-    padding: 1.25rem;
+    padding: 1rem;
     width: 100%;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;

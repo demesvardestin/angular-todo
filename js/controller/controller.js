@@ -1,5 +1,7 @@
 app.controller("controller", function($scope) {
     $scope.taskContent = "";
+    $scope.show = true;
+    $scope.tasks = Task.tasks();
     
     $scope.addToLS = function() {
         var tasks =
@@ -8,10 +10,20 @@ app.controller("controller", function($scope) {
         tasks[index] = $scope.taskContent;
         localStorage.setItem("tasks", JSON.stringify(tasks));
         
-        
+        inputForm.reset();
+        Task.load()
     };
     
     $scope.clearTasks = function() {
         localStorage.removeItem("tasks");
-    }
+        Task.load();
+    };
+    
+    $scope.toggleShow = function() {
+        if (document.querySelector('#task-input').value.length > 0) {
+            $('#empty-list').hide();
+        } else {
+            $('#empty-list').show();
+        }
+    };
 });

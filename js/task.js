@@ -15,13 +15,26 @@ class Task {
         var row = document.createElement('div');
         row.setAttribute('class', 'task-row text-muted');
         row.setAttribute('ng-bind', 'taskContent');
-        row.setAttribute('disabled', 'true');
         
         if (content) {
             row.innerHTML = content;
         }
         
         document.querySelector('#tasks').appendChild(row);
+    }
+    
+    static tasks() {
+        let list = this.checkList();
+        let keys = Object.keys(list);
+        let i = 0;
+        let tasks = [];
+        
+        while (i < keys.length) {
+            tasks.push(list[keys[i]]);
+            i++;
+        }
+        
+        return tasks;
     }
     
     static load() {
