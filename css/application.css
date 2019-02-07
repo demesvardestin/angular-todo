@@ -118,7 +118,7 @@ nav {
     border-radius: 1rem;
 }
 
-.no-display {
+.no-display, .ng-hide {
     display: none;
 }
 
