@@ -17,6 +17,12 @@
 	</head>
 	
 	<body ng-app="app" ng-controller="controller">
+		<script type="text/javascipt">
+			if (typeof(Storage) === "undefined") {
+			  alert('Your browser does not support WebStorage!');
+			}
+		</script>
+		
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<a class="navbar-brand" href="#">angular-todo</a>
 			
